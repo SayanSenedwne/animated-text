@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body {
+    font-family: "Modak";
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.main-text {
+    margin-top: 250px;
+    background: url(./sea.jpg);
+    font-size: 150px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 18s infinite ease-in-out;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-text {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-text {
+        font-size: 70px;
+    }
+}
